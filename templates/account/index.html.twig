@@ -3,10 +3,11 @@
 {% block title %}Mon Compte{% endblock %}
 
 {% block content %}
-        <h1>Mon Compte<h1>
-        <div></div>
+        
+        <div><h1>Mon Compte<h1></div>
         
         Bienvenue {{app.user.firstname}} dans Votre espace membre.
-        
+        <hr>
+        <a href="{{path('app_account_password')}}">Modifier mon mot de passe </a>
         
 {% endblock %}
