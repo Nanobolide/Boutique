@@ -11,8 +11,8 @@ class AccountController extends AbstractController
     #[Route('/compte', name: 'app_account')]
     public function index(): Response
     {
-        return $this->render('account/index.html.twig');
+            return $this->render('account/index.html.twig');
+    
     }
 
-    #[Route('/deconnexion', name: 'app_logout')],
 }
